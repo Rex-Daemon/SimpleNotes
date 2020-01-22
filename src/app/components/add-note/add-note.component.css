@@ -1,0 +1,26 @@
+.add-form {
+    width: 400px;
+    padding: 25px;
+    margin-left: 25px;
+}
+
+.title-input {
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #015c70;
+    border-radius: 5px;
+    background: #d1f7ff;
+    border: 5px solid #9cebfd;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text-input {
+    height: 200px;
+    font-size: 20px;
+    color: #015c70;
+    border-radius: 5px;
+    background: #d1f7ff;
+    border: 5px solid #9cebfd;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}

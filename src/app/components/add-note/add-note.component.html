@@ -1,0 +1,19 @@
+<form #addForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-group add-form">
+    <input
+      type="text"
+      name="title"
+      placeholder="Note Title"
+      [(ngModel)]="title"
+      class="form-control title-input"
+    />
+    <textarea
+      name="text"
+      placeholder="Note Content Here"
+      [(ngModel)]="text"
+      class="form-control text-input"
+    ></textarea>
+
+    <input type="submit" value="ADD" class="btn btn-dark btn-lg btn-block" />
+  </div>
+</form>

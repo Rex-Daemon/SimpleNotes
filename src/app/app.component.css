@@ -1,0 +1,15 @@
+.header {
+    height: 125px;
+    text-align: center;
+    margin-bottom: 50px;
+    background: #d1f7ff;
+    border-bottom: 5px solid #9cebfd;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    padding: 10px;
+    font-size: 65px;
+    font-weight: bold;
+    
+}

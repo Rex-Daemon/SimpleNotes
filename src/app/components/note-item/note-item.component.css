@@ -1,0 +1,31 @@
+.note-item {
+    width: 350px;
+    min-height: 300px;
+    margin: 25px;
+    padding: 25px;
+    color: #015c70;
+    border-radius: 10px;
+    background: #d1f7ff;
+    border: 10px solid #9cebfd;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.note-title p {
+    flex: 9;
+}
+
+.btn-sm {
+    height: 35px;
+}
+
+.note-text {
+    font-size: 20px;
+}
+
