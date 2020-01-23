@@ -13,7 +13,7 @@ export class NoteListComponent implements OnInit {
   constructor(private _notesService: NotesService) {}
 
   ngOnInit() {
-    this.notes = this._notesService.getNotes();
+    this._notesService.getNotes().subscribe(data => this.notes = data)
   }
 
   deleteNote(note: Note) {

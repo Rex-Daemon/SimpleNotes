@@ -1,33 +1,18 @@
+import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs'
 import { Note } from '../interfaces/Note'
-import { v4 as uuid } from 'uuid'
+import { Observable } from 'rxjs'
 
 @Injectable({
   providedIn: 'root'
 })
 export class NotesService {
-  notes:Note[] = [
-    {
-      id: uuid.v4(),
-      title: 'Title 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    },
-    {
-      id: uuid.v4(),
-      title: 'Title 2',
-      text: 'Quisque at leo fringilla, sagittis turpis ultricies, viverra arcu.'
-    },
-    {
-      id: uuid.v4(),
-      title: 'Title 3',
-      text: 'Aenean semper urna eu odio malesuada, at auctor dui egestas.'
-    }
-  ]
+  notes:Note[]
   
-  constructor() { }
+  private _url = '/assets/data/notes.json'
+  constructor(private http:HttpClient) { }
 
-  getNotes() {
-    return this.notes
+  getNotes():Observable<Note[]> {
+    return this.http.get<Note[]>(this._url)
   }
 }
